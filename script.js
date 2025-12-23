@@ -358,7 +358,6 @@ if (updateBtn) {
     updateBtn.addEventListener("click", async function () {
 
         if (!editId) {
-            console.log("NO EDIT ID");
             return;
         }
 
@@ -371,7 +370,6 @@ if (updateBtn) {
             type: selectedType
         };
 
-        console.log("UPDATING:", editId, updatedData);
 
         try {
             await fetch(
